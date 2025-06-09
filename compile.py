@@ -1,7 +1,7 @@
 import pandas as pd
 import pickle
 from sklearn.metrics import mean_squared_error, r2_score
-
+#Ensure you have the .pkl file
 def calc_accuracy(actual, predicted):
     if actual == 0:
         return 100 if predicted == 0 else 0
