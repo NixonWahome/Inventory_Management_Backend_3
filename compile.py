@@ -79,6 +79,6 @@ def generate_and_cache_forecast_results():
     with open('forecast_results.pkl', 'wb') as rf:
         pickle.dump(cached_data, rf)
     print("Forecast results and metrics cached in forecast_results.pkl")
-
+ #main method
 if __name__ == '__main__':
     generate_and_cache_forecast_results()
