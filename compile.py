@@ -11,7 +11,7 @@ def calc_accuracy(actual, predicted):
 def generate_and_cache_forecast_results():
     csv_path = r"C:\Users\Overkill\Desktop\retail_store_inventory.csv"
     df = pd.read_csv(csv_path)
-    # Preserve reference columns for display purposes
+    # Preserve reference columns for initial display purposes
     df_reference = df[['Product ID', 'Category', 'Units Sold']].copy()
     
     # Convert 'Date' to datetime and extract features
